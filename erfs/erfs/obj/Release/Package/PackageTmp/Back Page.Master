@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Back Page.master.cs" Inherits="erfs.Back_Page" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="height:211px; background-image: url('img.png');border-image:stretch; background-repeat:no-repeat;background-position-x:right">
+        <table align="center">
+            <tr>
+                <br />
+                <br />
+                <br />
+                <td align="center" colspan="1" style="line-height:2px">
+                    <h1>Eswara Reddy Filling Station</h1>
+                    <h3>SH-54,Junction,Bestavaripeta</h3>
+                    <h3>Prakasam-523334</h3>
+                 </td>
+                   </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>    
+
+        </div>
+        <br />
+        <br />
+        <br />
+        <table>
+            <tr colspan="1" height="68%" width="80%">
+                
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" RenderingMode="Table" align="right" >
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/login.aspx" Text="Login" Value="Login"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/About Us.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    
+            </tr>
+        </table>
+        <table align="center" border="0" cellspacing="0" style="background-position:inherit;width:auto;height:800px" cellpadding="0">
+            <tr >
+            <td  style="height:auto;width:auto;">
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+            </asp:ContentPlaceHolder>
+
+            </td>
+            </tr>
+             </table>
+        <table align="center" border="0" cellspacing="0" style="background-position:inherit;width:auto;height:auto" cellpadding="0">
+            <tr >
+                <td   style="align-content:center;width:auto;height:auto">
+                    <asp:Menu ID="Menu2" runat="server" Orientation="Horizontal" RenderingMode="Table" align="center">
+            <Items>
+                <asp:MenuItem Text="Privacy" Value="Privacy" ></asp:MenuItem>
+                <asp:MenuItem Text="Contact Us" Value="Contact Us"></asp:MenuItem>
+                <asp:MenuItem Text="Site Map" Value="Site Map"></asp:MenuItem>
+                <asp:MenuItem Text="Prices" Value="Prices"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <br />
+        <asp:Menu ID="Menu3" runat="server" Orientation="Horizontal" RenderingMode="Table" align="center">
+            <Items>
+                <asp:MenuItem Text="Feedback" Value="Feedback"></asp:MenuItem>
+                <asp:MenuItem Text="Help" Value="Help"></asp:MenuItem>
+                <asp:MenuItem Text="Store" Value="Store"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"> &copy; www.erfs.com, 2005</td>
+                </tr>
+               
+       </table>
+    </form>
+</body>
+</html>

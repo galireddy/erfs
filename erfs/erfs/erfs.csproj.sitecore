@@ -1,0 +1,5 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="localhost" UserName="MGREDDY\apmgr" IsRemoteSitecore="False" />
+  </PropertyGroup>
+</Project>
